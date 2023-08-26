@@ -1,22 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-/* Applies to the entire body of the HTML document (except where overridden by more specific
-selectors). */
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-bg-color: rgba(18 18 18 / 100%);
+  --border-color: rgba(113 119 144 / 25%);
+  --theme-color: #f9fafb;
+  --inactive-color: rgb(113 119 144 / 78%);
+  --body-font: "Poppins", sans-serif;
+  --hover-menu-bg: rgba(12 15 25 / 30%);
+  --content-title-color: #999ba5;
+  --content-bg: rgb(146 151 179 / 13%);
+  --button-inactive: rgb(249 250 251 / 55%);
+  --dropdown-bg: #152642;
+  --dropdown-hover: rgb(8 27 51);
+  --popup-bg: rgb(22 25 37);
+  --search-bg: #14162b;
+  --overlay-bg: rgba(36, 39, 59, 0.3);
+  --scrollbar-bg: rgb(1 2 3 / 40%);
+  --text-color-high: rgba(255 255 255 / 87%);
+  --text-color-medium: rgba(255 255 255 / 60%);
+  --text-color-disabled: rgba(255 255 255 / 38%%);
+}
+
+.light-mode {
+  --theme-bg-color: rgb(255 255 255 / 31%);
+  --theme-color: #3c3a3a;
+  --inactive-color: #333333;
+  --button-inactive: #3c3a3a;
+  --search-bg: rgb(255 255 255 / 31%);
+  --dropdown-bg: #f7f7f7;
+  --overlay-bg: rgb(255 255 255 / 30%);
+  --dropdown-hover: rgb(236 236 236);
+  --border-color: rgb(255 255 255 / 35%);
+  --popup-bg: rgb(255 255 255);
+  --hover-menu-bg: rgba(255 255 255 / 35%);
+  --scrollbar-bg: rgb(255 253 253 / 57%);
+  --content-title-color: --theme-color;
+}
+
 body {
-    margin: 25px;
-    background-color: rgb(100, 174, 247);
-    font-family: arial, sans-serif;
-    font-size: 14px;
-  }
-  
-  /* Applies to all <h1>...</h1> elements. */
-  h1 {
-    font-size: 35px;
-    font-weight: normal;
-    margin-top: 5px;
-  }
-  
-  /* Applies to all elements with <... class="someclass"> specified. */
-  .text-big { color: black; }
+  color: var(--text-color-medium);
+  margin: 0px;
+  background-color: var(--theme-bg-color);
+  font-family: var(--body-font);
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Applies to the element with <... id="someid"> specified. */
-  #someid { font-weight: italic; }
+#header-image {
+  width: 100%;
+  background-image: url(img/banner-img.jpeg);
+  height: 200px;
+  background-position: center;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
+.sticky + .content {
+  padding-top: 60px;
+}*/
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--dropdown-bg);
+  top: 0;
+}
+
+li.menu {
+  float: right;
+}
+
+li.menu-title {
+  float: left;
+}
+
+li.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+}
+
+li.menu-title a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+}
+
+li.menu-title a:hover {
+  text-decoration: underline;
+}
+
+li.menu a:hover {
+  background-color: #506680;
+}
+
+
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid {
+  font-weight: italic;
+}
