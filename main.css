@@ -52,6 +52,11 @@ body {
   align-items: center;
 }
 
+#body_text, #body_about {
+  padding: 20px;
+}
+
+
 #header-image {
   width: 100%;
   background-image: url(img/banner-img.jpeg);
@@ -64,6 +69,8 @@ h1 {
   font-size: 35px;
   font-weight: normal;
   margin-top: 5px;
+  color: var(--text-color-high);
+  text-align:center;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position 
@@ -103,7 +110,7 @@ li.menu a {
   text-decoration: none;
 }
 
-li.menu-title a {
+li.menu-title div {
   display: block;
   color: white;
   text-align: center;
@@ -111,7 +118,7 @@ li.menu-title a {
   text-decoration: none;
 }
 
-li.menu-title a:hover {
+li.menu-title div:hover {
   text-decoration: underline;
 }
 
@@ -119,7 +126,58 @@ li.menu a:hover {
   background-color: #506680;
 }
 
+/* ABOUT SECTION */
 
+#body_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  width: 1200px;
+  height:675px;
+ /*background-size: cover;
+  max-width: 1200px;
+  max-height:675px;*/
+  background-position: center center;
+  background-image: url(img/slovenia_bikepacking.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: medium solid #fff8f8;
+  
+}
+
+.box_about {
+  background-color: rgba(0,0,0,.6);
+  width: 75em;
+  color: #fff;
+  padding: 20px 20px;
+  align-content: center;
+  text-align: center;
+
+}
+
+.box_about:hover {
+  background-color: rgba(0,0,0,.8);
+}
+
+
+/* PROJECTS SECTION */
+
+.box_project {
+  background-color: var(--content-bg);
+  border: medium solid var(--border-color);
+  border-radius: 25px;
+}
+
+.project_title {
+  font-weight: bold;
+  color: #fff;
+}
 
 /* Applies to the element with <... id="someid"> specified. */
 #someid {
