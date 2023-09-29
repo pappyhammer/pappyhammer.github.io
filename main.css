@@ -157,6 +157,7 @@ li.menu a:hover {
   align-items: center;
   justify-content: center;
   border: medium solid #fff8f8;
+  border-radius: 25px;
   
 }
 
@@ -168,6 +169,7 @@ li.menu a:hover {
   align-content: center;
   text-align: center;
   vertical-align: middle;
+  border-radius: 25px;
 
 }
 
