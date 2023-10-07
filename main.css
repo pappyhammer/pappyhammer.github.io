@@ -207,6 +207,7 @@ li.menu a:hover {
   border-radius: 25px;
   width: 80%;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   overflow: hidden;
   top: 0;
@@ -233,35 +234,40 @@ li.menu a:hover {
   margin-left: 0; 
   margin-right: 0;
   margin-right:0px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  /* border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
+
   /* border: thin solid white; */
   
 }
 
-.project_img:hover{
+/* .project_img:hover{
   opacity: 0.8;
+} */
+
+#girafe, #deepcinac, #citnps, #scn8a_folding{
+  min-width:600px;
+  /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
+  flex: 0 0 600px;
 }
 
 #girafe {
-  background-image: url(img/girafe_main.png);
-  min-width:727px;
-  /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
-  flex: 0 0 727px;
+  background-image: url(img/girafe_main_window.png);
 }
 
-/* #girafe_descr {
-  min-width:727px;
-} */
 
 #deepcinac {
   background-image: url(img/exploratory_GUI_cinac.png);
-  min-width:617px;
-  flex: 0 0 617px;
 }
 
-/* #deepcinac_descr {
-  min-width:617px;
-} */
+#citnps {
+  background-image: url(img/citnps_main_window.png);
+}
+
+#scn8a_folding{
+  background-image: url(img/scn8a_folding.png);
+}
 
 .project_descr {
   order: 2;
@@ -308,13 +314,13 @@ h3{
   flex: 1 0 auto;
 }
 
-@media all and (max-width: 2000px) {
+@media all and (max-width: 2100px) {
   .project_descr {
     font-size:small;
   }
 }
 
-@media all and (max-width: 1600px) {
+@media all and (max-width: 1700px) {
   .project_box {
     flex-direction: column;
   }
@@ -328,11 +334,8 @@ h3{
     height:min-content;
   }
 
-  #girafe {
+  #girafe, #deepcinac, #citnps {
     flex: 0 0 400px; 
-  }
-  #deepcinac {
-    flex: 0 0 400px;
   }
 
   .project_descr {
@@ -365,11 +368,12 @@ hr#project{
   justify-content:center;
   flex: 0 0 50px;
   font-size:medium;
+  flex-wrap:wrap;
   /* background-color: yellow; */
 }
 
 
-#python_tag, #toolbox_tag, #deeplearning_tag, #research_tag, #p_ca_tag {
+#python_tag, #toolbox_tag, #deeplearning_tag, #research_tag, #p_ca_tag, #pediatrics_tag, #epilepsia_tag {
   /* float:left;  */
   height:28px;
   width:100px;
@@ -403,6 +407,15 @@ hr#project{
 #p_ca_tag{
   background-color: 	#899499;
 }
+
+#pediatrics_tag{
+  background-color: 	#FFBF00;
+}
+
+#epilepsia_tag {
+  background-color: #5D3FD3;
+}
+
 
 /* Applies to the element with <... id="someid"> specified. */
 #someid {

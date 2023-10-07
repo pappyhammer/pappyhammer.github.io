@@ -6,10 +6,10 @@
   </title>
   <link href="main.css" rel="stylesheet">
   <script src="jquery-3.7.0.min.js"></script>
-  
+
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
 
-  
+
 </head>
 
 <body>
@@ -18,110 +18,177 @@
 
   <section class="menu">
     <ul class="menu" id="navbar_quote">
-      <li class="menu-title"><div id="menu">Act as if the maxims of your action were to become through your will a universal law of nature --  Kant</div></li>
+      <li class="menu-title">
+        <div id="menu">Act as if the maxims of your action were to become through your will a universal law of nature --
+          Kant</div>
+      </li>
     </ul>
     <ul class="menu" id="navbar">
-        <li class="menu"><a href="./about.html">About</a></li>
-        <li class="menu"><a href="./index.html">Projects</a></li>
-    </ul>   
-</section>
+      <li class="menu"><a href="./about.html">About</a></li>
+      <li class="menu"><a href="./index.html">Projects</a></li>
+    </ul>
+  </section>
   <div id="body_project">
 
     <h1>Ongoing projects</h1>
 
     <div class="project_box">
       <div class="project_img" id="girafe" onclick="window.open('https://github.com/pappyhammer/PyGIRAFE')"></div>
-      <div class="project_descr" id="girafe_descr">
-        <h3><a href="https://github.com/pappyhammer/PyGIRAFE" target="_blank" rel="noopener noreferrer" class="project_title">PyGIRAFE</a></h2>
-        
-        <div class="project_main_text">
-          <p>PyGIRAFE stands for Python Graphical Interface to Run Analyses Flexibly and Easily.
+      <div class="project_descr">
+        <h3><a href="https://github.com/pappyhammer/PyGIRAFE" target="_blank" rel="noopener noreferrer"
+            class="project_title">PyGIRAFE</a></h3>
 
-          It's a Python graphical interface aimed for facilitating the analyses of data.</p>
-          
-          <p>The goal is to provide an easy-to-use GUI to load your data, filter them and fine-tuned your analyses parameters.
-          
-          Any kind of data can be used after having configured a Python wrapper to link your data to GIRAFE interface.</p>
-          
-          You can select the data on which you want to run a given analysis, manually or using pre-set filters while having the option to save groups of data for a quick access during future runs.
-        </div>
-        <hr id="project">
-        <div class="tags_vertical_filling">
-          <div class="tags_empty_space"></div>
-          <div class="tags_box"> 
-            <div id="python_tag">Python</div>
-            <div id="toolbox_tag">Toolbox</div>
+          <div class="project_main_text">
+            <p>PyGIRAFE stands for <b>Python Graphical Interface to Run Analyses Flexibly and Easily</b>.
+
+              It's a Python graphical interface aimed for facilitating the analyses of data.</p>
+
+            <p>The goal is to provide an easy-to-use GUI to load your data, filter them and fine-tuned your analyses
+              parameters.
+
+              Any kind of data can be used after having configured a Python wrapper to link your data to GIRAFE
+              interface.</p>
+
+            You can select the data on which you want to run a given analysis, manually or using pre-set filters while
+            having the option to save groups of data for a quick access during future runs.
           </div>
-        </div>
+          <hr id="project">
+          <div class="tags_vertical_filling">
+            <div class="tags_empty_space"></div>
+            <div class="tags_box">
+              <div id="python_tag">Python</div>
+              <div id="toolbox_tag">Toolbox</div>
+            </div>
+          </div>
 
       </div>
     </div>
 
 
-      <h1>Previous projects</h1>
+    <div class="project_box">
+      <div class="project_img" id="scn8a_folding""></div>
+      <div class="project_descr">
+        <h3><a href="" target="_blank" rel="noopener noreferrer"
+          class="project_title">SCN8A Folding</a></h3>
 
-      <div class="project_box">
-        <div class="project_img" id="deepcinac" onclick="window.open('https://gitlab.com/cossartlab/deepcinac')"></div>
-        <div class="project_descr" id="deepcinac_descr">
-          <h3><a href="https://gitlab.com/cossartlab/deepcinac" target="_blank" rel="noopener noreferrer" class="project_title">DeepCINAC</a></h2>
-          
-            <div class="project_main_text">
-          <p>It combines a Graphical User Interface (GUI) that offers various tools to visually evaluate
-          inferred neuronal activity from inference methods and to build a eye inspection-based ground truth on calcium imaging data.</p>
-          <p>And a deep-learning based method, named DeepCINAC (Calcium  Imaging  Neuronal  Activity  Classifier). Instead  of  basing  activity  inference  on  the extracted fluorescence signal,
-          DeepCINAC builds up on the visual inspection of each cell from the raw movie using the GUI.</p>
-          This toolbox being very flexible, it can be adapted to any kind of calcium imaging dataset, in-vivo or in-vitro.</br>
-          This toolbox can also be used to predict cell type.
-        </div>
-        
+          <div class="project_main_text">
+            <p>Exploratory work that aims at building a predictive model to identify the most effective therapeutic for a patient using similarity 
+              measures between variants’ structure.</p>
+            <p>I applied ESMFold (a rival of Alphafold) to all missense variants with phenorypic data available in literature, 189 of them. The idea is a long shot as 
+              it is quite controversial that alphafold is able to predict missense variant structure. Nonetheless, I have obtained results, but due to a lack of 
+              data, it is difficult to confirm that the model could be useful.</p> 
+              <p>I intend to release the code soon and make it so it could be applied to other clinicaly relevant proteins.</p>
+
+            
+          </div>
           <hr id="project">
           <div class="tags_vertical_filling">
             <div class="tags_empty_space"></div>
-            <div class="tags_box"> 
+            <div class="tags_box">
+              <div id="python_tag">Python</div>
+              <div id="epilepsia_tag">Epilepsia</div>
+              <div id="research_tag">Research</div>
+              <div id="pediatrics_tag">Pediatrics</div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+
+    <h1>Previous projects</h1>
+
+    <div class="project_box">
+      <div class="project_img" id="deepcinac" onclick="window.open('https://gitlab.com/cossartlab/deepcinac')"></div>
+      <div class="project_descr">
+        <h3><a href="https://gitlab.com/cossartlab/deepcinac" target="_blank" rel="noopener noreferrer"
+            class="project_title">DeepCINAC</a></h2>
+
+          <div class="project_main_text">
+            <p>It combines a Graphical User Interface (GUI) that offers various tools to visually evaluate
+              inferred neuronal activity from inference methods and to build a eye inspection-based ground truth on
+              calcium imaging data.</p>
+            <p>And a deep-learning based method, named DeepCINAC (<b>Calcium Imaging Neuronal Activity Classifier</b>). Instead
+              of basing activity inference on the extracted fluorescence signal,
+              DeepCINAC builds up on the visual inspection of each cell from the raw movie using the GUI.</p>
+            This toolbox being very flexible, it can be adapted to any kind of calcium imaging dataset, in-vivo or
+            in-vitro.</br>
+            This toolbox can also be used to predict cell type.
+          </div>
+
+          <hr id="project">
+          <div class="tags_vertical_filling">
+            <div class="tags_empty_space"></div>
+            <div class="tags_box">
               <div id="python_tag">Python</div>
               <div id="toolbox_tag">Toolbox</div>
-              <div id="deeplearning_tag">DL</div>
+              <div id="deeplearning_tag" title="Deep Learning">DL</div>
               <div id="p_ca_tag">2p Ca++</div>
               <div id="research_tag">Research</div>
 
             </div>
           </div>
-  
-        </div>
+
       </div>
-  
-      <p>A condimentum vitae sapien pellentesque habitant morbi. Neque vitae tempus quam pellentesque nec nam aliquam. Eget
-        lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Leo in vitae turpis massa. Faucibus pulvinar elementum
-        integer enim. Enim praesent elementum facilisis leo vel. Leo urna molestie at elementum. Scelerisque eu ultrices
-        vitae
-        auctor eu augue ut lectus arcu. Ut tortor pretium viverra suspendisse. Risus quis varius quam quisque. Venenatis
-        lectus magna fringilla urna. Luctus venenatis lectus magna fringilla urna. Purus gravida quis blandit turpis cursus
-        in
-        hac. Dolor sit amet consectetur adipiscing elit.</p>
-
-      <h1>Projects ideas</h1>
-
-      <p>Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Placerat in egestas erat imperdiet sed euismod
-        nisi.
-        Vestibulum lectus mauris ultrices eros. Massa eget egestas purus viverra accumsan in nisl nisi. Convallis a cras
-        semper auctor neque vitae tempus. Odio pellentesque diam volutpat commodo sed. Sit amet mattis vulputate enim nulla
-        aliquet porttitor. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
-        Pharetra
-        massa massa ultricies mi quis hendrerit dolor magna. Lacus viverra vitae congue eu consequat ac felis. Mauris a diam
-        maecenas sed enim ut. Dui faucibus in ornare quam viverra. Neque ornare aenean euismod elementum nisi. Porttitor
-        eget
-        dolor morbi non arcu risus quis varius quam.</p>
-  
-      <p>Augue eget arcu dictum varius duis at. Metus aliquam eleifend mi in nulla. Semper quis lectus nulla at volutpat
-        diam
-        ut venenatis. Ut etiam sit amet nisl purus in mollis nunc sed. Quam adipiscing vitae proin sagittis nisl rhoncus
-        mattis rhoncus. Urna et pharetra pharetra massa massa ultricies. Cras fermentum odio eu feugiat. Morbi tempus
-        iaculis
-        urna id volutpat lacus laoreet non curabitur. Facilisi etiam dignissim diam quis enim. Iaculis nunc sed augue lacus
-        viverra. Nec ultrices dui sapien eget mi proin sed libero. Convallis convallis tellus id interdum velit. Id velit ut
-        tortor pretium viverra suspendisse potenti. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris.</p>
-
     </div>
+
+    <div class="project_box">
+      <div class="project_img" id="citnps" onclick="window.open('https://gitlab.com/cossartlab/citnps')"></div>
+      <div class="project_descr">
+        <h3><a href="https://gitlab.com/cossartlab/citnps" target="_blank" rel="noopener noreferrer"
+            class="project_title">CITNPS</a></h2>
+
+          <div class="project_main_text">
+            <p>CITNPS stands for "<b>Camera Is The New Piezoelectric Sensor</b>"</p>
+            <p>It is a simple toolbox designed to extract the movement of the body-parts of an head-fixed animal
+              from one or multiple movies.</p>
+            <p>Each body-part is defined by an area (for now a rectangular one), we then apply one or two threshold on
+              the image, and
+              extract a signal composed of the difference of each pixel intensity between two consecutive frames, the
+              bigger the movement the bigger the amplitude of the movement. The signal is then normalized using a z-score.
+              The signal is then similar to the one that would be obtained with a Piezoelectric sensor.</p>
+          </div>
+
+          <hr id="project">
+          <div class="tags_vertical_filling">
+            <div class="tags_empty_space"></div>
+            <div class="tags_box">
+              <div id="python_tag">Python</div>
+              <div id="toolbox_tag">Toolbox</div>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <h1>Projects ideas</h1>
+
+    <p>Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Placerat in egestas erat imperdiet sed euismod
+      nisi.
+      Vestibulum lectus mauris ultrices eros. Massa eget egestas purus viverra accumsan in nisl nisi. Convallis a cras
+      semper auctor neque vitae tempus. Odio pellentesque diam volutpat commodo sed. Sit amet mattis vulputate enim
+      nulla
+      aliquet porttitor. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
+      Pharetra
+      massa massa ultricies mi quis hendrerit dolor magna. Lacus viverra vitae congue eu consequat ac felis. Mauris a
+      diam
+      maecenas sed enim ut. Dui faucibus in ornare quam viverra. Neque ornare aenean euismod elementum nisi. Porttitor
+      eget
+      dolor morbi non arcu risus quis varius quam.</p>
+
+    <p>Augue eget arcu dictum varius duis at. Metus aliquam eleifend mi in nulla. Semper quis lectus nulla at volutpat
+      diam
+      ut venenatis. Ut etiam sit amet nisl purus in mollis nunc sed. Quam adipiscing vitae proin sagittis nisl rhoncus
+      mattis rhoncus. Urna et pharetra pharetra massa massa ultricies. Cras fermentum odio eu feugiat. Morbi tempus
+      iaculis
+      urna id volutpat lacus laoreet non curabitur. Facilisi etiam dignissim diam quis enim. Iaculis nunc sed augue
+      lacus
+      viverra. Nec ultrices dui sapien eget mi proin sed libero. Convallis convallis tellus id interdum velit. Id velit
+      ut
+      tortor pretium viverra suspendisse potenti. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris.</p>
+
+  </div>
 
   <script src="main.js"></script>
 </body>
