@@ -6,7 +6,9 @@
 }
 
 :root {
-  --theme-bg-color: rgba(18 18 18 / 100%);
+  /*
+  --theme-bg-color: rgba(18 18 18 / 100%); */
+  --theme-bg-color: #081B33;
   --border-color: rgba(113 119 144 / 25%);
   --theme-color: #f9fafb;
   --inactive-color: rgb(113 119 144 / 78%);
@@ -15,6 +17,8 @@
   --content-title-color: #999ba5;
   --content-bg: rgb(146 151 179 / 13%);
   --button-inactive: rgb(249 250 251 / 55%);
+  /*
+  --dropdown-bg: #152642; 03396c*/
   --dropdown-bg: #152642;
   --dropdown-hover: rgb(8 27 51);
   --popup-bg: rgb(22 25 37);
@@ -24,6 +28,7 @@
   --text-color-high: rgba(255 255 255 / 87%);
   --text-color-medium: rgba(255 255 255 / 60%);
   --text-color-disabled: rgba(255 255 255 / 38%%);
+  --project-img-height: 400px;
 }
 
 .light-mode {
@@ -44,18 +49,20 @@
 
 body {
   color: var(--text-color-medium);
-  margin: 0px;
+  margin: auto;
   background-color: var(--theme-bg-color);
   font-family: var(--body-font);
   font-size: 14px;
   justify-content: center;
   align-items: center;
+  align-content: center;
   padding-bottom: 20px;
 }
 
-#body_text, #body_about {
+#body_project, #body_about {
   padding: 20px 20px 20px 20px;
 }
+
 
 
 #header-image {
@@ -67,9 +74,9 @@ body {
 
 /* Applies to all <h1>...</h1> elements. */
 h1 {
-  font-size: 35px;
+  font-size: xx-large;
   font-weight: normal;
-  margin-top: 5px;
+  margin-top: 25px;
   color: var(--text-color-high);
   text-align:center;
 }
@@ -86,13 +93,17 @@ h1 {
   padding-top: 60px;
 }*/
 
-#navbar {
+#navbar, #navbar_quote {
   list-style-type: none;
+  background-color: var(--dropdown-bg);
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--dropdown-bg);
   top: 0;
+}
+
+#navbar_quote {
+  background-color: var(--theme-bg-color);
 }
 
 li.menu {
@@ -180,15 +191,217 @@ li.menu a:hover {
 
 /* PROJECTS SECTION */
 
-.box_project {
-  background-color: var(--content-bg);
-  border: medium solid var(--border-color);
+#body_project {
+  display:flex; 
+  flex-direction:column; 
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.project_box {
+  /*
+  background-color: var(--content-bg); */
+  background-color: #2F4562;
+  border: medium solid var(--theme-bg-color);
   border-radius: 25px;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  display:flex; 
+  flex-direction: row; 
+  flex-wrap:nowrap;
+  justify-content: flex-start;
+}
+
+
+
+.project_box:hover {
+  background-color: #506680;
+}
+
+
+.project_img {
+  order:1;
+  /* display: block; */
+  /* float:left; */
+  height:var(--project-img-height);
+  background-repeat: no-repeat; 
+  
+  margin-left: 0; 
+  margin-right: 0;
+  margin-right:0px;
+  border-radius: 25px;
+  /* border: thin solid white; */
+  
+}
+
+.project_img:hover{
+  opacity: 0.8;
+}
+
+#girafe {
+  background-image: url(img/girafe_main.png);
+  min-width:727px;
+  /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
+  flex: 0 0 727px;
+}
+
+/* #girafe_descr {
+  min-width:727px;
+} */
+
+#deepcinac {
+  background-image: url(img/exploratory_GUI_cinac.png);
+  min-width:617px;
+  flex: 0 0 617px;
+}
+
+/* #deepcinac_descr {
+  min-width:617px;
+} */
+
+.project_descr {
+  order: 2;
+  /* display: block; */
+  padding-left:10px;
+  padding-right:10px;
+  /* margin: auto; */
+  height:var(--project-img-height);
+  /* width:100%; */
+  color: black; /* var(--theme-bg-color) */
+  /* text-align: center; */
+  align-content: center;
+  font-size:medium;
+  line-height: 1.7;
+  /* background-color: yellow; */
+  overflow:auto;
+
+  display:flex; 
+  flex-direction:column; 
+  justify-content: flex-start;
+}
+
+h3{
+  text-align: center;
 }
 
 .project_title {
   font-weight: bold;
-  color: #fff;
+  color: black;
+  font-size: x-large;
+  text-align: center;
+  margin-bottom:0px;
+  margin-top:0px;
+  text-decoration: none;
+}
+
+
+.project_title:hover {
+  text-decoration: underline;
+  color:var(--theme-bg-color);
+}
+
+.project_main_text {
+  flex: 1 0 auto;
+}
+
+@media all and (max-width: 2000px) {
+  .project_descr {
+    font-size:small;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  .project_box {
+    flex-direction: column;
+  }
+
+  .project_descr {
+    font-size:medium;
+  }
+
+  .project_box {
+    width:min-content;
+    height:min-content;
+  }
+
+  #girafe {
+    flex: 0 0 400px; 
+  }
+  #deepcinac {
+    flex: 0 0 400px;
+  }
+
+  .project_descr {
+    height:min-content;
+  }
+
+}
+
+
+hr#project{
+  border: 0.5px solid black;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Those two helps to keep the tags at the bottom */
+.tags_vertical_filling{
+  flex-direction:column; 
+  justify-content: flex-start;
+}
+
+.tags_empty_space{
+  flex: 1 0 auto;
+}
+
+.tags_box{
+  text-align: center;
+  display: flex; 
+  justify-content:center;
+  flex: 0 0 50px;
+  font-size:medium;
+  /* background-color: yellow; */
+}
+
+
+#python_tag, #toolbox_tag, #deeplearning_tag, #research_tag, #p_ca_tag {
+  /* float:left;  */
+  height:28px;
+  width:100px;
+  border-radius: 20px;
+  font-weight: bold;
+  vertical-align:middle;
+  justify-content: center;
+  text-align: center;
+  padding:0px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:5px;
+}
+
+#python_tag {
+  background-color: #005b96;
+}
+
+#toolbox_tag {
+  background-color: 	#954535;
+}
+
+#deeplearning_tag{
+  background-color: 	#9F2B68;
+}
+
+#research_tag{
+  background-color: 	#008000;
+}
+
+#p_ca_tag{
+  background-color: 	#899499;
 }
 
 /* Applies to the element with <... id="someid"> specified. */
