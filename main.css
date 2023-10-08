@@ -246,7 +246,7 @@ li.menu a:hover {
   opacity: 0.8;
 } */
 
-#girafe, #deepcinac, #citnps, #scn8a_folding{
+#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada{
   min-width:600px;
   /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
   flex: 0 0 600px;
@@ -267,6 +267,10 @@ li.menu a:hover {
 
 #scn8a_folding{
   background-image: url(img/scn8a_folding.png);
+}
+
+#cicada{
+  background-image: url(img/cicada_badass.png);
 }
 
 .project_descr {
@@ -334,7 +338,7 @@ h3{
     height:min-content;
   }
 
-  #girafe, #deepcinac, #citnps {
+  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding {
     flex: 0 0 400px; 
   }
 
