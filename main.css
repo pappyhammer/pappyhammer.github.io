@@ -319,12 +319,15 @@ h3{
 }
 
 @media all and (max-width: 2100px) {
+  .project_box {
+    width: 90%;
+  }
   .project_descr {
     font-size:small;
   }
 }
 
-@media all and (max-width: 1700px) {
+@media all and (max-width: 1500px) {
   .project_box {
     flex-direction: column;
   }
@@ -345,6 +348,7 @@ h3{
   .project_descr {
     height:min-content;
   }
+
 
 }
 
