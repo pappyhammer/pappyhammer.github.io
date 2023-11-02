@@ -246,7 +246,7 @@ li.menu a:hover {
   opacity: 0.8;
 } */
 
-#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada{
+#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp{
   min-width:600px;
   /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
   flex: 0 0 600px;
@@ -271,6 +271,10 @@ li.menu a:hover {
 
 #cicada{
   background-image: url(img/cicada_badass.png);
+}
+
+#srp{
+  background-image: url(img/synthetic_raster_plot_brain.png);
 }
 
 .project_descr {
@@ -341,7 +345,7 @@ h3{
     height:min-content;
   }
 
-  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding {
+  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp {
     flex: 0 0 400px; 
   }
 
