@@ -149,6 +149,7 @@ li.menu a:hover {
   height:100%;
 }
 
+
 .about {
   /*width: 1200px;
   height:675px;*/
@@ -160,6 +161,7 @@ li.menu a:hover {
   background-image: url(img/slovenia_bikepacking.jpeg);
   background-repeat: no-repeat;
   display: flex;
+  flex-direction:column; 
   overflow: auto;
   /*
   background-size: cover;
@@ -181,10 +183,29 @@ li.menu a:hover {
   text-align: center;
   vertical-align: middle;
   border-radius: 25px;
+  margin-bottom: 20px;
 
 }
 
+.box_topics {
+  background-color: rgba(0,0,0,.6);
+  width: 90%;
+  color: #fff;
+  padding: 20px 20px;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 25px;
+
+}
+
+
+
 .box_about:hover {
+  background-color: rgba(0,0,0,.8);
+}
+
+.box_topics:hover {
   background-color: rgba(0,0,0,.8);
 }
 
@@ -246,7 +267,7 @@ li.menu a:hover {
   opacity: 0.8;
 } */
 
-#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp{
+#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp, #rosie{
   min-width:600px;
   /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
   flex: 0 0 600px;
@@ -277,6 +298,10 @@ li.menu a:hover {
   background-image: url(img/synthetic_raster_plot_brain.png);
 }
 
+#rosie{
+  background-image: url(img/rosie.png);
+}
+
 .project_descr {
   order: 2;
   /* display: block; */
@@ -296,6 +321,7 @@ li.menu a:hover {
   display:flex; 
   flex-direction:column; 
   justify-content: flex-start;
+  width: 100%;
 }
 
 h3{
@@ -345,7 +371,7 @@ h3{
     height:min-content;
   }
 
-  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp {
+  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp, #rosie {
     flex: 0 0 400px; 
   }
 
@@ -382,6 +408,21 @@ hr#project{
   font-size:medium;
   flex-wrap:wrap;
   /* background-color: yellow; */
+}
+
+.topic_tag {
+  height:28px;
+  width:150px;
+  border-radius: 20px;
+  font-weight: bold;
+  vertical-align:middle;
+  justify-content: center;
+  text-align: center;
+  padding:0px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+  color: black;
 }
 
 
