@@ -267,7 +267,7 @@ li.menu a:hover {
   opacity: 0.8;
 } */
 
-#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp, #rosie{
+#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp, #rosie, #yapa, #cms, #pp{
   min-width:600px;
   /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
   flex: 0 0 600px;
@@ -301,6 +301,19 @@ li.menu a:hover {
 #rosie{
   background-image: url(img/rosie.png);
 }
+
+#yapa{
+  background-image: url(img/yapa.png);
+}
+
+#cms{
+  background-image: url(img/cms.png);
+}
+
+#pp{
+  background-image: url(img/pp.png);
+}
+
 
 .project_descr {
   order: 2;
@@ -371,7 +384,7 @@ h3{
     height:min-content;
   }
 
-  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp, #rosie {
+  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp, #rosie, #yapa, #cms, #pp {
     flex: 0 0 400px; 
   }
 
@@ -426,7 +439,7 @@ hr#project{
 }
 
 
-#python_tag, #toolbox_tag, #deeplearning_tag, #research_tag, #p_ca_tag, #pediatrics_tag, #epilepsia_tag {
+#python_tag, #toolbox_tag, #deeplearning_tag, #research_tag, #p_ca_tag, #pediatrics_tag, #epilepsia_tag, #poker_tag, #education_tag, #web_tag {
   /* float:left;  */
   height:28px;
   width:100px;
@@ -468,6 +481,19 @@ hr#project{
 #epilepsia_tag {
   background-color: #5D3FD3;
 }
+
+#poker_tag {
+  background-color: #5D3FD3;
+}
+
+#web_tag{
+  background-color: 	#9F2B68;
+}
+
+#education_tag{
+  background-color: 	#008000;;
+}
+
 
 
 /* Applies to the element with <... id="someid"> specified. */
