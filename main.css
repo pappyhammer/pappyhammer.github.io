@@ -267,7 +267,7 @@ li.menu a:hover {
   opacity: 0.8;
 } */
 
-#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp, #rosie, #yapa, #cms, #pp{
+#girafe, #deepcinac, #citnps, #scn8a_folding, #cicada, #srp, #rosie, #yapa, #cms, #pp, #tdpp{
   min-width:600px;
   /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
   flex: 0 0 600px;
@@ -312,6 +312,10 @@ li.menu a:hover {
 
 #pp{
   background-image: url(img/pp.png);
+}
+
+#tdpp{
+  background-image: url(img/tdpp.png);
 }
 
 
@@ -384,7 +388,7 @@ h3{
     height:min-content;
   }
 
-  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp, #rosie, #yapa, #cms, #pp {
+  #girafe, #deepcinac, #citnps, #cicada, #scn8a_folding, #srp, #rosie, #yapa, #cms, #pp, #tdpp {
     flex: 0 0 400px; 
   }
 
