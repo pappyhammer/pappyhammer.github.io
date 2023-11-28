@@ -69,7 +69,7 @@ body {
 }
 
 #body_about {
-  padding: 10px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .section_menu {
@@ -189,6 +189,7 @@ li.menu a:hover {
   border: medium solid #fff8f8;
   border-radius: 25px;
   margin-bottom: 50px;
+  margin-top: 10px;
 }
 
 .about_topics {
